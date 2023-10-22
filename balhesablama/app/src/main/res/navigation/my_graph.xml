@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/anaekran">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.qm.balhesablama.FirstFragment"
+        android:label="fragment_doqquzhesablama"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_FFragment"
+            app:destination="@id/FFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.qm.balhesablama.SecondFragment"
+        android:label="fragment_ononbirhesablama"
+        tools:layout="@layout/fragment_ononbirhesablama" >
+        <action
+            android:id="@+id/action_secondFragment_to_FFragment"
+            app:destination="@id/FFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/FFragment"
+        android:name="com.qm.balhesablama.FFragment"
+        android:label="fragment_f"
+        tools:layout="@layout/fragment_f" >
+        <action
+            android:id="@+id/action_FFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_FFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_FFragment_to_anaekran"
+            app:destination="@id/anaekran"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/anaekran"
+        android:name="com.qm.balhesablama.anaekran"
+        android:label="fragment_anaekran"
+        tools:layout="@layout/fragment_anaekran" >
+        <action
+            android:id="@+id/action_anaekran_to_FFragment"
+            app:destination="@id/FFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_anaekran_to_bloks"
+            app:destination="@id/bloks"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloks"
+        android:name="com.qm.balhesablama.bloks"
+        android:label="fragment_bloks"
+        tools:layout="@layout/fragment_bloks" >
+        <action
+            android:id="@+id/action_bloks_to_blokI"
+            app:destination="@id/blokI"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_bloks_to_blokII"
+            app:destination="@id/blokII"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_bloks_to_blokIII"
+            app:destination="@id/blokIII"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_bloks_to_blokIV"
+            app:destination="@id/blokIV"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_bloks_to_anaekran"
+            app:destination="@id/anaekran"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/blokI"
+        android:name="com.qm.balhesablama.blokI"
+        android:label="fragment_blok_i"
+        tools:layout="@layout/fragment_blok_i" >
+        <action
+            android:id="@+id/action_blokI_to_bloks"
+            app:destination="@id/bloks"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/blokII"
+        android:name="com.qm.balhesablama.blokII"
+        android:label="fragment_blok_i_i"
+        tools:layout="@layout/fragment_blok_i_i" >
+        <action
+            android:id="@+id/action_blokII_to_bloks"
+            app:destination="@id/bloks"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/blokIII"
+        android:name="com.qm.balhesablama.blokIII"
+        android:label="fragment_blok_i_i_i"
+        tools:layout="@layout/fragment_blok_i_i_i" >
+        <action
+            android:id="@+id/action_blokIII_to_bloks"
+            app:destination="@id/bloks"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/blokIV"
+        android:name="com.qm.balhesablama.blokIV"
+        android:label="fragment_blok_i_v"
+        tools:layout="@layout/fragment_blok_i_v" >
+        <action
+            android:id="@+id/action_blokIV_to_bloks"
+            app:destination="@id/bloks"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+</navigation>

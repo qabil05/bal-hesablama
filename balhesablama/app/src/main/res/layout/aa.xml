@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".FirstFragment">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="0"
+            tools:layout_editor_absoluteX="327dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="278dp"
+            android:layout_marginEnd="27dp"
+            android:text="Ümumi bal:"
+            app:layout_constraintEnd_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Hesabla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/gridLayout2"
+            app:layout_constraintEnd_toStartOf="@+id/gridLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/gridLayout2">
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Riyaziyyat"
+                android:textSize="14sp"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="12dp"
+                android:text="Xarici dil"
+                android:textSize="14sp"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Tədris dili"
+                android:textSize="14sp"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="262dp"
+            android:layout_height="120dp"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="135dp">
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/editTextNumber1"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="number"
+
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <EditText
+                android:id="@+id/editTextNumber5"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/editTextNumber7"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="2"
+                app:layout_row="2" />
+
+            <EditText
+                android:id="@+id/editTextNumber4"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <EditText
+                android:id="@+id/editTextNumber6"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textV1"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginLeft="50dp"
+                android:text="0"
+                app:layout_column="3"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/textV2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="50dp"
+                android:text="0"
+                app:layout_column="3"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/textV3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="50dp"
+                android:text="0"
+                app:layout_column="3"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout3"
+            android:layout_width="296dp"
+            android:layout_height="67dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="54dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="74dp"
+                android:layout_height="66dp"
+                android:text="Cavabların kodlaşdırılması tələb olunan açıq tipli tapşırıqlar üzrə düzgün cavabların sayı"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="77dp"
+                android:layout_height="match_parent"
+                android:text="Qapalı tipli tapşırıqlar üzrə düzgün cavabların sayı"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="Yazılı şəkildə cavablandırılması tələb olunan açıq tipli tapşırıqlar üzrə düzgün cavabların sayı"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nisbi bal"
+                android:textSize="9sp" />
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

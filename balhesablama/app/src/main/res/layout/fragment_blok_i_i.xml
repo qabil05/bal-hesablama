@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".blokII">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".blokII">
+
+
+        <Button
+            android:id="@+id/bg1"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/round_bg"
+            android:drawableLeft="@drawable/baseline_arrow_back_24"
+            android:onClick="goToGeri6"
+            android:text="Geri"
+            android:textSize="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnCalculate2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnCalculate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/round_bg"
+            android:text="Hesabla"
+            android:drawableLeft="@drawable/baseline_calculate_24"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bg1"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textV4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="0"
+            android:textColorHint="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:theme="@style/Theme.BalHesablama"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="@+id/gridLayout2" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="25dp"
+            android:text="Ümumi bal:"
+            android:textColorHint="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:theme="@style/Theme.BalHesablama"
+            app:layout_constraintEnd_toStartOf="@+id/textV4"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout2" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="300dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/textV4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout3">
+
+            <EditText
+                android:id="@+id/editT4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="3"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/editT8"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="3"
+                app:layout_row="1" />
+
+            <EditText
+                android:id="@+id/editT12"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="3"
+                app:layout_row="2" />
+
+            <EditText
+                android:id="@+id/editT2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/editT5"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <EditText
+                android:id="@+id/editT9"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+            <EditText
+                android:id="@+id/editT1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/editT3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <EditText
+                android:id="@+id/editT11"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="2"
+                app:layout_row="2" />
+
+            <EditText
+                android:id="@+id/editT10"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="1"
+                app:layout_row="2" />
+
+            <EditText
+                android:id="@+id/editT6"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+            <EditText
+                android:id="@+id/editT7"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16dp"
+                android:theme="@style/Theme.BalHesablama" />
+
+            <TextView
+                android:id="@+id/textV1"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textColorHint="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="5"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/textV2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textColorHint="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="5"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/textV3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="25dp"
+                android:text="0"
+                android:textColorHint="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="5"
+                app:layout_row="2" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout3"
+            android:layout_width="345dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gridLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Düzgün cavabların sayı (qapalı)"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="62dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:text="Yanlış cavabların sayı (qapalı)"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:text="Düzgün cavabların sayı (açıq, kodlaşdırıla bilən)"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="Nisbi bal"
+                android:textColorHint="#000000"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="4"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:text="Situasiya (açıq,yazılı)"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:layout_column="3"
+                app:layout_row="0" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="84dp"
+            android:layout_height="133dp"
+
+            android:layout_marginStart="20dp"
+
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/gridLayout2"
+            app:layout_constraintEnd_toStartOf="@+id/gridLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/gridLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Riyaziyyat"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Coğrafiya"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Tarix"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:theme="@style/Theme.BalHesablama"
+                app:layout_column="0"
+                app:layout_row="2" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
